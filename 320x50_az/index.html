@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=320,height=50">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      TweenLite.ticker.useRAF(false);
+      TweenLite.lagSmoothing(0);
+      var tl = new TimelineMax({ repeat: 2, repeatDelay: 4});
+
+      tl.from("#schirm", 1, {opacity: 1})
+        .from("#logo", 0.4, {opacity: 0, scale: 0.4}, '-=0.4')
+        // .from("#jar", 0.4, {x: 200}, '-=0.1')
+        // .from("#candy", 0.4, {x: 200}, '-=0.1')
+        .from("#txt", 0.4, {opacity: 0, scale: 0.4})
+      ;
+   });
+  </script>
+</head>
+<body>
+  <a href="javascript:window.open(window.clickTag)" target="_blank">
+    <div class="container">
+      <div id="lights" class="el">
+        <div id="light01" class="el  light">
+          <img src="lights01.png">
+        </div>
+        <div id="light02" class="el  light">
+          <img src="lights02.png">
+        </div>
+        <div id="light03" class="el  light">
+          <img src="lights03.png">
+        </div>        
+      </div>
+      <div id="txt" class="el">
+        <img src="txt.svg">
+      </div>
+      <!-- <div id="jar" class="el">
+        <img src="jar.png">
+      </div>
+      <div id="candy" class="el">
+        <img src="candy.png">
+      </div> -->
+      <div id="logo" class="el">
+        <img src="logo.svg">
+      </div>
+     <div id="schirm" class="el"></div>
+
+    </div>
+  </a>
+</body>
