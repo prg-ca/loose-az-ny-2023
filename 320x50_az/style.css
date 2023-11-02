@@ -48,9 +48,9 @@ img {
 
 
 #logo {
-  width: 124px;
-  left: 10px;
-  top: 8px;
+  width: 134px;
+  left: 93px;
+  top: 5px;
 }
 
 #lights {
@@ -114,20 +114,20 @@ img {
 }
 
 #txt {
-  width: 170px;
-  left: 139px;
-  top: 16px;
+  width: 250px;
+  left: 53px;
+  top: 10px;
 }
 
 #jar {
-  width: 44px;
-  left: 272px;
-  top: 2px;
+  width: 45px;
+  left: -4px;
+  top: 1px;
 }
 
 #candy {
   width: 30px;
-  left: 270px;
+  left: 42px;
   top: 37px;
 }
 
